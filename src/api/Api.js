@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const BaseRequest = axios.create({
-  baseURL:
-    // "https://ass0weh8ie.execute-api.eu-central-1.amazonaws.com/dev/weather",
-    "http://localhost:5000/",
+  baseURL: "https://ass0weh8ie.execute-api.eu-central-1.amazonaws.com/dev",
+  // "http://localhost:5000/",
   responseType: "json",
 });
 
