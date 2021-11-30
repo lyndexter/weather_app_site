@@ -13,6 +13,11 @@ const Home = () => {
       pathname: "/create_weather",
     });
   }
+  function goToSensorDataContainer() {
+    history.push({
+      pathname: "/sensor_data",
+    });
+  }
 
   useEffect(() => {
     getAllWeather().then((res) => setWeatherList(res));
@@ -25,6 +30,7 @@ const Home = () => {
         <WeatherItem weather={weather}></WeatherItem>
       ))}
       <Button onClick={goToCreateWeatherPage}>Add new weather</Button>
+      <Button onClick={goToSensorDataContainer}>Show sensor data</Button>
     </WeatherContainer>
   );
 };
