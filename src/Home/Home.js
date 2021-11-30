@@ -16,7 +16,7 @@ const Home = () => {
 
   useEffect(() => {
     getAllWeather().then((res) => setWeatherList(res));
-    console.log();
+    console.log(weatherList);
   }, []);
 
   return (
